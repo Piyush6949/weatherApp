@@ -1,10 +1,11 @@
 
 const express = require("express");
 const app = express();
-
-const PORT = 8000;
-const geoCodeAPI = "pk.2b2084b7eaea6b080dc654f7382879c9";
-const weatherAPI = "f3df84de2c7eae9f855a73e8ec8671a9";
+const dotenv = require("dotenv");
+dotenv.config();
+const PORT = process.env.PORT;
+const geoCodeAPI = process.env.geoCodeAPI;
+const weatherAPI = process.env.weatherAPI;
 
 app.get("/", (req, res) => {
     res.end("Hi, how are you my friend!!");
@@ -29,5 +30,5 @@ app.get("/weather", (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log("Hi the server has started ");
+    console.log(`Hi the server has started on PORT ${PORT}`);
 })
