@@ -9,9 +9,10 @@ This project helped me understand:
   * How to use Async/Await for promise based function.
   * Handling Routes in Express.
  
-## What is this Project
+## About Project
 
 This is a backend-based Weather App made for learning purposes (I have just started development 🥲).
+
 It takes your location input via the URL and returns a JSON response containing detailed weather information.
 
 You can clone this project and run it on localhost.
